@@ -4,10 +4,10 @@ import "./App.css";
 import "@aws-amplify/ui-react/styles.css";
 import {
   Button,
-  Flex,
+  // Flex,
   Heading,
-  Text,
-  TextField,
+  // Text,
+  // TextField,
   View,
   withAuthenticator,
   Image,
