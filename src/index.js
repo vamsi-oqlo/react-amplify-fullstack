@@ -5,8 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Amplify } from "aws-amplify";
 import config from "./aws-exports";
+import AWS from 'aws-sdk';
+
 
 Amplify.configure(config);
+
+
+AWS.config.update({
+  region: 'ap-south-1', // Replace 'your-region' with your desired AWS region, e.g., 'us-east-1'
+});
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

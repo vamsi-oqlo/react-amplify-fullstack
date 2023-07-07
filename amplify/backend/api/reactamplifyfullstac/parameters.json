@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "reactamplifyfullstac",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2023-07-07T07:27:23.758Z"
+}
