@@ -1,26 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Amplify } from "aws-amplify";
-import config from "./aws-exports";
-import AWS from 'aws-sdk';
+import { Amplify } from 'aws-amplify';
+import awsmobile from './aws-exports';
 
+Amplify.configure(awsmobile);
 
-Amplify.configure(config);
-
-
-AWS.config.update({
-  region: 'ap-south-1', // Replace 'your-region' with your desired AWS region, e.g., 'us-east-1'
-});
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const root = document.getElementById('root');
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  root
 );
 
 // If you want to start measuring performance in your app, pass a function

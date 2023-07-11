@@ -17,6 +17,9 @@
       },
       "api": {
         "reactamplifyfullstac": {}
+      },
+      "storage": {
+        "imagestorage": {}
       }
     }
   }
